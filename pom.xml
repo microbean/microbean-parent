@@ -18,7 +18,7 @@
   <name>MicroBean Parent POM</name>
   <description>${project.name}</description>
   <inceptionYear>2017</inceptionYear>
-  <url>http://ljnelson.github.io/${project.artifactId}/</url>
+  <url>http://ljnelson.github.io/microbean-parent/</url>
   
   <organization>
     <name>MicroBean</name>
@@ -35,9 +35,9 @@
   </licenses>
 
   <scm>
-    <connection>scm:git:git@github.com:ljnelson/${project.artifactId}.git</connection>
-    <developerConnection>scm:git:git@github.com:ljnelson/${project.artifactId}.git</developerConnection>
-    <url>https://github.com/ljnelson/${project.artifactId}/</url>
+    <connection>scm:git:git@github.com:ljnelson/microbean-parent.git</connection>
+    <developerConnection>scm:git:git@github.com:ljnelson/microbean-parent.git</developerConnection>
+    <url>https://github.com/ljnelson/microbean-parent/</url>
   </scm>
 
   <distributionManagement>
@@ -63,7 +63,7 @@
 
   <issueManagement>
     <system>Github</system>
-    <url>https://github.com/ljnelson/${project.artifactId}/issues</url>
+    <url>https://github.com/ljnelson/microbean-parent/issues</url>
   </issueManagement>
 
   <build>
