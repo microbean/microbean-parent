@@ -2,10 +2,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Xlint="urn:javac" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <prerequisites>
-    <maven>3.3.9</maven>
-  </prerequisites>
-
   <groupId>org.microbean</groupId>
   <artifactId>microbean-parent-pom</artifactId>
   <version>3-SNAPSHOT</version>
@@ -95,7 +91,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-project-info-reports-plugin</artifactId>
-          <version>${mavenProjectInfoReportsPluginVersion}</version>
+          <version>2.9</version>
         </plugin> 
         <plugin>
           <artifactId>maven-release-plugin</artifactId>
@@ -103,7 +99,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-site-plugin</artifactId>
-          <version>3.5.1</version>
+          <version>3.6</version>
         </plugin>
         <plugin>
           <artifactId>maven-source-plugin</artifactId>
@@ -119,7 +115,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-javadoc-plugin</artifactId>
-          <version>${mavenJavadocPluginVersion}</version>
+          <version>3.0.0-M1</version>
         </plugin>
         <plugin>
           <groupId>org.sonatype.plugins</groupId>
@@ -144,10 +140,6 @@
   </build>
   
   <properties>
-
-    <!-- Versions -->
-    <mavenJavadocPluginVersion>2.10.4</mavenJavadocPluginVersion>
-    <mavenProjectInfoReportsPluginVersion>2.9</mavenProjectInfoReportsPluginVersion>
 
     <!-- maven-compiler-plugin properties -->
     <maven.compiler.showDeprecation>true</maven.compiler.showDeprecation>
