@@ -4,7 +4,7 @@
 
   <groupId>org.microbean</groupId>
   <artifactId>microbean-parent-pom</artifactId>
-  <version>12-SNAPSHOT</version>
+  <version>12</version>
   <packaging>pom</packaging>
 
   <name>microBean™ Parent POM</name>
@@ -30,7 +30,7 @@
     <connection>scm:git:git@github.com:microbean/microbean-parent.git</connection>
     <developerConnection>scm:git:git@github.com:microbean/microbean-parent.git</developerConnection>
     <url>https://github.com/microbean/microbean-parent/</url>
-    <tag>HEAD</tag>
+    <tag>microbean-parent-pom-12</tag>
   </scm>
 
   <distributionManagement>
