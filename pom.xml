@@ -157,8 +157,7 @@
     <!-- maven-release-plugin properties -->
     <goals>deploy</goals>
     <!-- See http://central.sonatype.org/pages/apache-maven.html#performing-a-release-deployment-with-the-maven-release-plugin -->
-    <releaseProfiles>release</releaseProfiles>
-    <useReleaseProfile>false</useReleaseProfile>
+    <releaseProfiles>deployment</releaseProfiles>
 
     <!-- maven-resource-plugin properties -->
     <maven.resource.escapeString>\</maven.resource.escapeString>
@@ -175,7 +174,7 @@
 
   <profiles>
     <profile>
-      <id>release</id>
+      <id>deployment</id>
       <build>
         <plugins>
           <plugin>
