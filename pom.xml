@@ -131,6 +131,14 @@
           <artifactId>nexus-staging-maven-plugin</artifactId>
           <version>1.6.8</version>
           <extensions>true</extensions>
+          <dependencies>
+            <!-- https://issues.sonatype.org/browse/NEXUS-26993?focusedCommentId=1098136&page=com.atlassian.jira.plugin.system.issuetabpanels%3Acomment-tabpanel#comment-1098136 -->
+            <dependency>
+              <groupId>com.thoughtworks.xstream</groupId>
+              <artifactId>xstream</artifactId>
+              <version>1.4.18</version>
+            </dependency>
+          </dependencies>
           <configuration>
             <serverId>sonatype-oss-repository-hosting</serverId>
             <nexusUrl>https://oss.sonatype.org/</nexusUrl>
@@ -166,7 +174,7 @@
     <!-- nexus-staging-maven-plugin properties -->
     <!-- See https://github.com/sonatype/nexus-maven-plugins/blob/0aee3defb33cb133ff536aba59b11d32a368b1e6/staging/maven-plugin/src/main/java/org/sonatype/nexus/maven/staging/AbstractStagingMojo.java#L169-L175 -->
     <stagingProgressTimeoutMinutes>10</stagingProgressTimeoutMinutes>
-    
+
     <!-- Other properties -->
     <project.build.sourceEncoding>UTF8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF8</project.reporting.outputEncoding>
