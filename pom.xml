@@ -34,9 +34,13 @@
   </scm>
 
   <distributionManagement>
+    <repository>
+      <id>sonatype-oss-repository-hosting</id>
+      <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url> <!-- https://central.sonatype.org/publish/publish-maven/#distribution-management-and-authentication -->
+    </repository>
     <snapshotRepository>
       <id>sonatype-oss-repository-hosting</id>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+      <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url> <!-- https://central.sonatype.org/publish/publish-maven/#distribution-management-and-authentication -->
     </snapshotRepository>
   </distributionManagement>
 
@@ -141,7 +145,7 @@
           </dependencies>
           <configuration>
             <serverId>sonatype-oss-repository-hosting</serverId>
-            <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+            <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
             <autoReleaseAfterClose>true</autoReleaseAfterClose>
           </configuration>
         </plugin>
